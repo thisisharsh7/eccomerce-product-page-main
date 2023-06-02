@@ -58,3 +58,7 @@ ul{
     display: flex;
     padding: 0.5em 3em;
 }
+footer{
+    text-align: center;
+    padding: 2em 0em;
+}
