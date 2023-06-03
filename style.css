@@ -140,3 +140,20 @@ footer{
     letter-spacing: 1px;
     text-decoration: line-through;
 }
+.hero-set{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.set{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.cart-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
