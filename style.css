@@ -21,12 +21,14 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
 }
 .header_wrapper{
-    padding: 0.5em 3em;
+    padding: 44px 3em;
 }
 nav{
     display: flex;
     gap: 4em;
     align-items: center;
+    padding-bottom: 2em;
+    border-bottom: 2px solid var(--Light-grayish-blue);
 }
 ul{
     display: flex;
@@ -56,9 +58,85 @@ ul{
 
 .hero_section{
     display: flex;
-    padding: 0.5em 3em;
+    padding:100px 3em;
+    gap: 9em;
 }
+.hero_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto 1fr;
+    row-gap: 3.5em;
+    column-gap: 2.5em;
+}
+.hero_main_img img{
+    width: 100%;
+    border-radius: 2.5em;
+}
+.hero_main_img{
+    grid-column: 1/-1;
+}
+.list-image{
+    grid-row-start: 2;
+    border-radius: 1.5em;
+}
+
 footer{
     text-align: center;
     padding: 2em 0em;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0em;
+   gap: 1.4em;
+}
+.hero-text h3{
+    color:var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.hero-text h1{
+    font-size: 2.8em;
+    letter-spacing: 1.8px;
+    line-height: 1.15;
+}
+.hero-para{
+    color:var(--Dark-grayish-blue);
+    font-size: 1.05em;
+    letter-spacing: 0.8px;
+}
+.hero-price{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.price span{
+    font-size: 0.9em;
+    font-weight: 700;
+    background-color: var(--Pale-orange);
+    border-radius: 2.5px;
+    padding: 1px 7px;
+    color: var(--Orange);
+}
+.price span:first-of-type{
+    font-size: 1.45em;
+    font-weight:700;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0;
+    color: var(--Black);
+    
+}
+.discount{
+    color:var(--Grayish-blue);
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-decoration: line-through;
 }
